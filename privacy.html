@@ -14,36 +14,66 @@
     <a href="support.html">Support</a>
   </nav>
   <h1>Privacy policy</h1>
-  <p>Effective 15 October 2026. This policy describes Pocket Logic version 1.0.0, store test build 3.</p>
-  <p>Operator: Pavel Yasonau, ul. Za Olszyna 15A/1, 05-090 Podolszyn Nowy, Poland. Support: <a href="mailto:dream.quiz.support@gmail.com">dream.quiz.support@gmail.com</a>. There is no separate company name.</p>
+  <p>Effective 15 October 2026. This policy applies to Pocket Logic for Android and iOS, version 1.0.0 and later.</p>
+  <p>Controller: Pavel Yasonau, ul. Za Olszyna 15A/1, 05-090 Podolszyn Nowy, Poland. Contact: <a href="mailto:dream.quiz.support@gmail.com">dream.quiz.support@gmail.com</a>. There is no separate company name.</p>
 
-  <h2>What this version does</h2>
-  <p>Pocket Logic is a puzzle game. You do not create an account. Solving a puzzle does not require an internet connection.</p>
-  <p>This version does not show ads and does not sell in-app purchases. The Google Mobile Ads SDK and RevenueCat are not included unless real Pocket Logic identifiers are configured for a later build. This policy must be updated before that happens.</p>
+  <h2>Summary</h2>
+  <p>Pocket Logic is a puzzle game. You do not create an account, and we do not ask for your name, email, phone number, contacts, photos, or precise location. Your puzzle progress stays on your device.</p>
+  <p>The free version shows ads served by Google AdMob. To show ads, the Google Mobile Ads SDK in the app sends device and usage data to Google. This is described below. Some internal test builds do not include the ad SDK; those builds send no ad data.</p>
 
-  <h2>Data stored on your device</h2>
+  <h2>Data stored only on your device</h2>
   <ul>
-    <li>Puzzle marks, completed puzzles, hint counts, unlocked puzzle IDs, theme, language, reminder preference, the local dates on which you solved a puzzle, and the local dates on which you finished the puzzle of the day. Opening the app does not add a solved day.</li>
-    <li>A diagnostics log of up to 500 events: event name, time, and limited details such as puzzle ID, mechanic, difficulty, hint count, and paywall trigger. It does not store the puzzle grid, free text, your name, or your email. Nothing in this log is uploaded. You can clear it in Settings → View diagnostics.</li>
-    <li>If you turn on a reminder after completing two puzzles, the operating system stores one repeating local notification. Pocket Logic does not request a push token for this reminder.</li>
+    <li>Puzzle marks, completed puzzles, hint counts, unlocked puzzle IDs, theme, language, reminder preference, and the local dates on which you solved puzzles.</li>
+    <li>A diagnostics log of up to 500 events, such as event name, time, puzzle ID, difficulty, and hint count. It contains no puzzle grid, free text, name, or email. It is not uploaded. You can clear it in Settings → View diagnostics.</li>
+    <li>If you turn on a daily reminder, the operating system stores one local notification. No push token is requested.</li>
   </ul>
-  <p>Settings → Reset all progress deletes marks and completions on the device. It keeps the selected theme, language, and the list of puzzles unlocked with a reward. It does not clear the diagnostics log. Deleting the app removes this local data, except where the operating system keeps a backup.</p>
+  <p>We do not receive this data. Settings → Reset all progress deletes marks and completions. Deleting the app deletes all of it, except where your operating system keeps a backup.</p>
 
-  <h2>Data sent off the device</h2>
-  <p>The app code does not send puzzle progress, the diagnostics log, or an advertising identifier to the developer or to an analytics service. It does not request App Tracking Transparency. The Android advertising ID permission is removed from the store build.</p>
-  <p>On Android, the local-reminder library links Firebase Cloud Messaging. This build has no Firebase project configuration. The included Firebase startup provider logs an unsuccessful initialization and does not create a Firebase app when that configuration is absent. The app does not request a push token. The store build removes the advertising ID, overlay, photo and video storage, install-referrer, and launcher-badge permissions those libraries would otherwise add.</p>
-  <p>Apple and Google, as the stores that distribute the app, may process installation, purchase-of-the-app, and crash information under their own policies. Pocket Logic does not add a separate crash-reporting or analytics SDK.</p>
+  <h2>Advertising (Google AdMob)</h2>
+  <p>Pocket Logic shows full-screen ads between some puzzles and optional rewarded video ads. You can choose to watch a rewarded ad to unlock extra puzzles or extra hints. Ads are provided by Google Ireland Limited / Google LLC through AdMob.</p>
+  <p>We request <strong>non-personalized ads only</strong>: ads are not chosen based on your past behavior or profile. Even so, the Google Mobile Ads SDK collects and sends to Google:</p>
+  <ul>
+    <li>Device identifiers: on Android, the advertising ID and app set ID; on iOS, the identifier for vendors. On iOS we do not request App Tracking Transparency permission and do not access the advertising identifier (IDFA).</li>
+    <li>IP address, from which Google may infer approximate location (country or city).</li>
+    <li>Ad interactions: which ads were requested, shown, and tapped, and whether a rewarded ad was completed.</li>
+    <li>Diagnostics and performance data of the app and the ad SDK, such as launch time, hang rate, energy use, device model, OS version, and language.</li>
+  </ul>
+  <p>Google uses this data to deliver ads, limit how often the same ad appears, measure ads, prevent fraud and abuse, and keep the service secure. Data is encrypted in transit. Google processes it under its own policy: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. We do not sell your data and we do not receive the data that the ad SDK sends to Google in a form that identifies you.</p>
+
+  <h2>Consent and your choices</h2>
+  <p>In the European Economic Area, the United Kingdom, and Switzerland, the app shows Google's consent message before ads load. Ads are only requested if consent allows it. You can change your choice at any time in Settings → Privacy choices.</p>
+  <p>On Android you can reset or delete your advertising ID in the system settings (Settings → Google → Ads, or Settings → Privacy → Ads). On iOS you can reset the identifier for vendors by deleting the app.</p>
+
+  <h2>Legal bases (GDPR)</h2>
+  <ul>
+    <li>Data stored on your device: necessary to provide the game you asked for (Art. 6(1)(b)). It never leaves your device.</li>
+    <li>Storing and reading identifiers on your device and ad data sent to Google in the EEA, UK, and Switzerland: your consent (Art. 6(1)(a)), which you can withdraw at any time in Settings → Privacy choices.</li>
+    <li>Fraud prevention and security of ad delivery: legitimate interests (Art. 6(1)(f)).</li>
+  </ul>
+  <p>Google may transfer data outside the EEA under the safeguards described in its policies.</p>
+
+  <h2>Retention</h2>
+  <p>On-device data stays until you reset progress or delete the app. Ad data held by Google is kept for the periods described in Google's policies.</p>
+
+  <h2>Your rights</h2>
+  <p>You have the right to access, rectify, erase, restrict, and object to processing, the right to data portability, and the right to withdraw consent. Because we hold no account or server data about you, most requests concern Google: you can use Google's tools linked above, or write to us and we will help. You may also lodge a complaint with a supervisory authority; in Poland this is the President of the Personal Data Protection Office (Prezes Urzędu Ochrony Danych Osobowych, <a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
 
   <h2>Children</h2>
-  <p>Pocket Logic is not directed to children under 13. The Play target audience for this version is 13 and older. The puzzles have no violence, sexual content, gambling, chat, or user posts. The store content rating is whatever the store questionnaire returns for those answers. It is not an 18+ product.</p>
+  <p>Pocket Logic is not directed to children under 13, and the store target audience is 13 and older. We ask Google to show only ads rated G (suitable for general audiences). The puzzles have no violence, sexual content, gambling, chat, or user posts.</p>
+
+  <h2>Purchases</h2>
+  <p>Version 1.0.0 offers no in-app purchases. If purchases are added, this policy will be updated before they become available.</p>
 
   <h2>Changes</h2>
-  <p>A later version that turns on ads or purchases will change this policy and the store privacy forms before that processing starts.</p>
+  <p>We will update this page and its effective date before any change in how data is processed.</p>
 
-  <h2>Политика конфиденциальности</h2>
-  <p>Дата: 15 октября 2026 года. Текст относится к тестовой версии 1.0.0, сборка 3. Оператор: Pavel Yasonau, ul. Za Olszyna 15A/1, 05-090 Podolszyn Nowy, Poland. Почта: dream.quiz.support@gmail.com. Отдельной компании нет.</p>
-  <p>Аккаунт не нужен. В этой версии нет рекламы и покупок. Прогресс, настройки и журнал диагностики до 500 событий хранятся на устройстве. Код приложения их не отправляет. Даты решённых дней и даты головоломки дня тоже остаются на устройстве; простое открытие приложения день не добавляет. Журнал не содержит сетку головоломки, свободный текст, имя или почту. Сброс прогресса удаляет отметки и результаты, но сохраняет тему, язык и список головоломок, открытых наградой. Напоминание необязательно и создаётся локально, без push-токена. На Android библиотека напоминаний подключает Firebase Cloud Messaging, но в этой сборке нет конфигурации Firebase, поэтому приложение Firebase не создаётся. Из store-сборки убраны разрешения на идентификатор рекламы, поверх других окон, доступ к фото и видео, install referrer и значки лаунчеров. Приложение не предназначено для детей младше 13 лет. Целевая аудитория Google Play — 13 лет и старше. В задачах нет насилия, сексуального содержания, азартных игр, чата и публикаций игроков.</p>
-  <footer>Pocket Logic 1.0.0 · <a href="support.html">Support</a></footer>
+  <h2>Политика конфиденциальности (русский)</h2>
+  <p>Действует с 15 октября 2026 года для Pocket Logic на Android и iOS, версии 1.0.0 и новее. Ответственный за обработку: Pavel Yasonau, ul. Za Olszyna 15A/1, 05-090 Podolszyn Nowy, Poland. Почта: dream.quiz.support@gmail.com.</p>
+  <p>Аккаунт не нужен. Мы не просим имя, почту, телефон, контакты, фото и точное местоположение. Прогресс, настройки, журнал диагностики (до 500 событий) и локальное напоминание хранятся только на устройстве и к нам не попадают.</p>
+  <p>В бесплатной версии показывается реклама Google AdMob: полноэкранная между некоторыми задачами и необязательная реклама за награду, которая открывает дополнительные задачи или подсказки. Мы запрашиваем только неперсонализированную рекламу. При этом SDK Google Mobile Ads передаёт Google: идентификатор устройства (на Android — рекламный идентификатор, на iOS — идентификатор поставщика; IDFA и разрешение App Tracking Transparency не запрашиваются), IP-адрес и примерное местоположение по нему, взаимодействие с рекламой, диагностические данные SDK, модель устройства, версию системы и язык. Google использует эти данные для показа и измерения рекламы, ограничения частоты, защиты от мошенничества и безопасности по своим правилам: policies.google.com/technologies/partner-sites и policies.google.com/privacy. Данные шифруются при передаче. Мы данные не продаём. Некоторые внутренние тестовые сборки не содержат рекламного SDK и рекламных данных не передают.</p>
+  <p>В ЕЭЗ, Великобритании и Швейцарии перед загрузкой рекламы показывается окно согласия Google; изменить выбор можно в «Настройки → Настройки конфиденциальности». Правовые основания: исполнение (данные на устройстве), согласие (идентификаторы и рекламные данные в ЕЭЗ), законный интерес (защита от мошенничества). Вы вправе получить доступ, исправить, удалить данные, ограничить обработку, возразить, перенести данные и отозвать согласие, а также подать жалобу в Prezes Urzędu Ochrony Danych Osobowych (uodo.gov.pl).</p>
+  <p>Приложение не предназначено для детей младше 13 лет; целевая аудитория — 13 лет и старше; реклама ограничена категорией G. Покупок в версии 1.0.0 нет. Перед любым изменением обработки данных эта страница будет обновлена.</p>
+  <footer>Pocket Logic · <a href="support.html">Support</a></footer>
 </main>
 </body>
 </html>
